@@ -47,6 +47,12 @@
 #define ADD_PREFIX_MAIN_FUNC		(1)
 #endif
 
+#ifdef _RA_EK_RA6M5_EXTSEC_
+#include "sysdepend/ek_ra6m5/machine.h"
+#define Csym(sym) sym
+#define ADD_PREFIX_MAIN_FUNC		(1)
+#endif
+
 /* ===== C compiler dependencies definitions ============================= */
 
 #ifdef __GNUC__
